@@ -1,4 +1,4 @@
-OBJECTS = boot.o kmain.o common.o monitor.o
+OBJECTS = boot.o kmain.o monitor.o common.o interrupt.o gdt.o isr.o descriptor_tables.o
 CC = gcc
 CFLAGS = -m32 -nostdlib -nostdinc -fno-builtin -fno-stack-protector \
          -nostartfiles -nodefaultlibs -Wall -Wextra -Werror -c
